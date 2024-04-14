@@ -26,6 +26,22 @@
       "relation": "oneToMany",
       "target": "api::comment.comment",
       "mappedBy": "film"
+    },
+    "runTime": {
+      "type": "string"
+    },
+    "plot": {
+      "type": "string"
+    },
+    "imageUrl": {
+      "type": "string",
+      "default": "/notAvailable.jpg"
+    },
+    "genre": {
+      "type": "string"
+    },
+    "rating": {
+      "type": "string"
     }
   }
 }

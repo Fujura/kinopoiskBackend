@@ -422,6 +422,11 @@ export interface ApiFilmFilm extends Schema.CollectionType {
       'oneToMany',
       'api::comment.comment'
     >;
+    runTime: Attribute.String;
+    plot: Attribute.String;
+    imageUrl: Attribute.String & Attribute.DefaultTo<'/notAvailable.jpg'>;
+    genre: Attribute.String;
+    rating: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -845,6 +850,7 @@ export interface PluginUsersPermissionsUser extends Schema.CollectionType {
       'oneToMany',
       'api::comment.comment'
     >;
+    avatarUrl: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     createdBy: Attribute.Relation<
